@@ -1,5 +1,64 @@
+## 👉 Rider / IntelliJ / JetBrains
+.idea/
+*.sln.iml
+*.DotSettings
+*.DotSettings.user
+_ReSharper.*
+/_ReSharper.Caches/
+riderModule.iml
+
+## 👉 User-specific files
+*.user
+*.suo
+*.userosscache
+
+## 👉 Build artifacts
 bin/
 obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+*.dll
+*.exe
+*.app
+*.pdb
+*.cache
+
+## 👉 NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+*.psmdcp
+
+## 👉 VS Code config
+.vscode/
+*.code-workspace
+
+## 👉 macOS / Windows system files
+.DS_Store
+Thumbs.db
+
+## 👉 User secrets
+secrets.json
+
+## 👉 dotnet tooling
+*.dbmdl
+*.pidb
+*.svclog
+*.ide
+
+## 👉 Logs
+*.log
+logs/
+
+## 👉 Coverage / test reports
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+nunit-*.xml
+*.trx
+
+## 👉 EF Core migrations snapshots (optional)
+**/Migrations/*Snapshot.cs
+
+## 👉 Local settings
+*.local.json
+appsettings.Development.json
