@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.Docker.Sdk">
+﻿<Project Sdk="Microsoft.Docker.Sdk">
 
     <PropertyGroup>
         <DockerComposeProjectPath>docker-compose.yaml</DockerComposeProjectPath>

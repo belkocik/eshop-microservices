@@ -7,21 +7,26 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
     <ItemGroup>
-        <ProjectReference Include="..\..\..\..\BuildingBlocks\BuildingBlocks.csproj"/>
+        <ProjectReference Include="..\..\..\..\BuildingBlocks\BuildingBlocks.csproj">
+          <ReferenceSourceTarget></ReferenceSourceTarget>
+          <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+        </ProjectReference>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0"/>
-        <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0"/>
-        <PackageReference Include="Carter" Version="9.0.0"/>
-        <PackageReference Include="Marten" Version="7.40.4"/>
+        <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
+        <PackageReference Include="Carter" Version="9.0.0" />
+        <PackageReference Include="Marten" Version="7.40.4" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\..\..\..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+        <Content Include="..\..\..\..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
     </ItemGroup>
 
 </Project>
