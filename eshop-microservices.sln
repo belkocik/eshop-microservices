@@ -8,7 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "src\Services
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D27B632-EF2A-48F3-BA3B-3573B1A68007}"
 	ProjectSection(SolutionItems) = preProject
-		compose.yaml = compose.yaml
+		docker-compose.override.yaml = docker-compose.override.yaml
+		docker-compose.dcproj = docker-compose.dcproj
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{C29425A4-2BCC-44AF-A779-C2C9415A7432}"
