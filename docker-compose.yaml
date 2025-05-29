@@ -8,6 +8,13 @@
       context: .
       dockerfile: src/Services/Catalog/Catalog.API/Dockerfile
 
-volumes:
-  postgres_catalog:
+  basket.api:
+    image: basket.api
+    build:
+      context: .
+      dockerfile: src/Services/Basket/Basket.API/Dockerfile
+
+#volumes:
+#  postgres_catalog:
+
 
