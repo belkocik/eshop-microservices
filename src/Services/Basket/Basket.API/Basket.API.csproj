@@ -21,6 +21,7 @@
         <PackageReference Include="Carter" Version="9.0.0"/>
         <PackageReference Include="Marten" Version="7.40.4"/>
         <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.5"/>
+        <PackageReference Include="Scrutor" Version="6.1.0"/>
     </ItemGroup>
 
 </Project>
