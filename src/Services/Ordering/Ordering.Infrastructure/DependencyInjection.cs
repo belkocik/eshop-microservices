@@ -12,6 +12,8 @@ public static class DependencyInjection
 
     // todo:
     // services.AddDbContext
+    services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+    // services.AddScoped<IApplicationDbContext, ApplicationDbContext>();
 
     return services;
   }
